@@ -41,3 +41,6 @@
 |--------------------|------------------|---------------|
 | ![Interfaz](https://via.placeholder.com/300x200/3498db/white?text=Interfaz+Principal) | ![Guardar](https://via.placeholder.com/300x200/27ae60/white?text=Guardar+Sesión) | ![Config](https://via.placeholder.com/300x200/9b59b6/white?text=Configuración) |
 
+
+Creador de la extensión: Alexandru Graur Sánchez Monzonis
+
