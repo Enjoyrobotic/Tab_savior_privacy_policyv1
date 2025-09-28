@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Tab Savior</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .privacy-policy {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin: 40px 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .logo {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            background: #e8f4fd;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-left: 4px solid #3498db;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        h3 {
+            color: #34495e;
+            margin: 25px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table th {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .yes {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .no {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+
+        .permission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .permission-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .permission-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-info {
+            background: #e8f4fd;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+
+        .badge-success {
+            background: #27ae60;
+            color: white;
+        }
+
+        .badge-danger {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .badge-info {
+            background: #3498db;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .privacy-policy {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .permission-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .summary-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="privacy-policy">
+            <div class="header">
+                <div class="logo">🛡️</div>
+                <h1>Política de Privacidad</h1>
+                <div class="subtitle">Tab Savior - Tu salvavidas de pestañas</div>
+            </div>
+
+            <div class="last-updated">
+                <strong>Última actualización:</strong> 15 de Diciembre, 2024
+            </div>
+
+            <div class="summary-box">
+                <h3>📋 Resumen Ejecutivo</h3>
+                <p>Tab Savior está comprometido con proteger tu privacidad. Esta extensión de Chrome:</p>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <span class="badge badge-success">✅ NO recoge</span> información personal identificable
+                    </div>
+                    <div class="feature-item">
+                        <span class="badge badge-success">✅ NO vende</span> ni comparte datos con terceros
+                    </div>
+                    <div class="feature-item">
+                        <span class="badge badge-success">✅ ALMACENA</span> todo localmente en tu dispositivo
+                    </div>
+                    <div class="feature-item">
+                        <span class="badge badge-success">✅ FUNCIONA</span> completamente offline
+                    </div>
+                </div>
+            </div>
+
+            <h2>📊 Información que Recogemos</h2>
+
+            <h3>❌ Lo que NO recogemos:</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>¿Recogido?</th>
+                        <th>Explicación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Información de identificación personal</strong></td>
+                        <td class="no">❌ NO</td>
+                        <td>Nombres, emails, direcciones, edades, documentos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Datos sanitarios</strong></td>
+                        <td class="no">❌ NO</td>
+                        <td>Historial médico, síntomas, diagnósticos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Información financiera</strong></td>
+                        <td class="no">❌ NO</td>
+                        <td>Tarjetas de crédito, transacciones, estados bancarios</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Credenciales de autenticación</strong></td>
+                        <td class="no">❌ NO</td>
+                        <td>Contraseñas, PINs, preguntas de seguridad</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Comunicaciones personales</strong></td>
+                        <td class="no">❌ NO</td>
+                        <td>Emails, mensajes, chats, SMS</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ubicación geográfica</strong></td>
+                        <td class="no">❌ NO</td>
+                        <td>GPS, dirección IP, región</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>✅ Lo que SÍ recogemos (localmente):</h3>
+
+            <div class="permission-grid">
+                <div class="permission-card">
+                    <div class="permission-icon">📑</div>
+                    <h4>Metadatos de Pestañas</h4>
+                    <div class="code-block">
+{
+  "url": "https://ejemplo.com/pagina",
+  "title": "Título de la página",
+  "pinned": false,
+  "timestamp": "2024-12-15T10:00:00Z"
+}
+                    </div>
+                    <p><strong>Propósito:</strong> Exclusivamente para restaurar tus sesiones</p>
+                </div>
+
+                <div class="permission-card">
+                    <div class="permission-icon">⚙️</div>
+                    <h4>Configuración de la Extensión</h4>
+                    <div class="code-block">
+{
+  "autoBackup": true,
+  "maxSessions": 50,
+  "restoreBehavior": "ask"
+}
+                    </div>
+                    <p><strong>Propósito:</strong> Recordar tus preferencias</p>
+                </div>
+
+                <div class="permission-card">
+                    <div class="permission-icon">📝</div>
+                    <h4>Logs Técnicos (Opcional)</h4>
+                    <div class="code-block">
+{
+  "action": "session_saved",
+  "session_name": "Mi Proyecto",
+  "tab_count": 12,
+  "timestamp": "2024-12-15T10:00:00Z"
+}
+                    </div>
+                    <p><strong>Propósito:</strong> Diagnosticar problemas</p>
+                    <p><em>Puedes desactivarlos en Configuración</em></p>
+                </div>
+            </div>
+
+            <h2>🗄️ Almacenamiento de Datos</h2>
+            <p>Todos los datos se almacenan <strong>exclusivamente en tu navegador</strong> usando el almacenamiento local de Chrome:</p>
+
+            <div class="code-block">
+// EXCLUSIVAMENTE en tu navegador:
+chrome.storage.local.set({
+  savedSessions: [...],    // Tus sesiones guardadas
+  userSettings: {...},     // Tu configuración
+  extensionLogs: [...]     // Logs técnicos (opcionales)
+});
+            </div>
+
+            <h2>🌐 Compartición de Datos</h2>
+            <p><strong class="no">🚫 No compartimos tus datos con:</strong></p>
+            <ul>
+                <li><span class="badge badge-danger">NO</span> Terceros o anunciantes</li>
+                <li><span class="badge badge-danger">NO</span> Servicios de analytics</li>
+                <li><span class="badge badge-danger">NO</span> Redes sociales</li>
+                <li><span class="badge badge-danger">NO</span> Servidores externos</li>
+            </ul>
+
+            <h2>⚙️ Permisos de la Extensión</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Permiso</th>
+                        <th>Propósito</th>
+                        <th>Uso específico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>tabs</code></td>
+                        <td>Leer URLs y títulos</td>
+                        <td>Reconstruir sesiones al restaurar</td>
+                    </tr>
+                    <tr>
+                        <td><code>storage</code></td>
+                        <td>Guardar datos localmente</td>
+                        <td>Persistir sesiones y configuración</td>
+                    </tr>
+                    <tr>
+                        <td><code>alarms</code></td>
+                        <td>Programar backups</td>
+                        <td>Copias de seguridad automáticas</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>🔍 Tus Derechos y Control</h2>
+
+            <div class="permission-grid">
+                <div class="permission-card">
+                    <div class="permission-icon">📤</div>
+                    <h4>Exportar Tus Datos</h4>
+                    <p>Puedes exportar todas tus sesiones en formato JSON estándar</p>
+                    <ol>
+                        <li>Abre la extensión</li>
+                        <li>Haz clic en "Exportar Sesiones"</li>
+                        <li>Descarga el archivo JSON</li>
+                    </ol>
+                </div>
+
+                <div class="permission-card">
+                    <div class="permission-icon">🗑️</div>
+                    <h4>Eliminar Tus Datos</h4>
+                    <p>Múltiples formas de eliminar tus datos:</p>
+                    <ul>
+                        <li>Desde la extensión</li>
+                        <li>Desde Chrome settings</li>
+                        <li>Desinstalando la extensión</li>
+                    </ul>
+                </div>
+
+                <div class="permission-card">
+                    <div class="permission-icon">⚙️</div>
+                    <h4>Configurar Privacidad</h4>
+                    <p>Puedes ajustar:</p>
+                    <ul>
+                        <li>Habilitar/deshabilitar logs</li>
+                        <li>Activar/desactivar backups</li>
+                        <li>Configurar límites</li>
+                        <li>Elegir comportamiento</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>🛡️ Seguridad</h2>
+            <p>Hemos implementado múltiples medidas de protección:</p>
+
+            <div class="code-block">
+// 1. Sanitización de URLs sensibles
+const BLOCKED_PROTOCOLS = [
+  'chrome:', 'file:', 'data:', 'blob:',
+  'about:', 'javascript:', 'chrome-extension:'
+];
+
+// 2. Validación de todos los datos
+function validateSession(session) {
+  return session.name.length <= 50 &&
+         session.tabs.length <= 100;
+}
+
+// 3. Sin conexiones externas
+// No hay llamadas a APIs externas
+// No hay telemetría
+            </div>
+
+            <div class="contact-info">
+                <h3>📞 Contacto y Soporte</h3>
+                <p><strong>Para preguntas sobre privacidad:</strong> privacy@tabsavior.com</p>
+                <p><strong>Reportar problemas:</strong> support@tabsavior.com</p>
+                <p><strong>Tiempos de respuesta:</strong> 24-72 horas</p>
+            </div>
+
+            <h2>📝 Cambios en la Política</h2>
+            <p>Notificaremos sobre cambios importantes:</p>
+            <ul>
+                <li>Actualizaremos esta página con la nueva fecha</li>
+                <li>Mantendremos versiones anteriores archivadas</li>
+                <li>Cambios significativos serán anunciados en la extensión</li>
+            </ul>
+
+            <h2>🎯 Compromisos Clave</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <strong>Transparencia</strong><br>
+                    Explicamos exactamente qué hacemos
+                </div>
+                <div class="feature-item">
+                    <strong>Minimización</strong><br>
+                    Solo datos necesarios
+                </div>
+                <div class="feature-item">
+                    <strong>Localidad</strong><br>
+                    Todo en tu dispositivo
+                </div>
+                <div class="feature-item">
+                    <strong>Control</strong><br>
+                    Tú decides
+                </div>
+            </div>
+
+            <div class="footer">
+                <p><strong>© 2024 Tab Savior. Todos los derechos reservados.</strong></p>
+                <p><em>Esta política puede actualizarse. Revisa periódicamente para cambios.</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
